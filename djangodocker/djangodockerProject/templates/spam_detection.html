@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spam Messages</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			font-size: 2em;
+			color: #333;
+		}
+
+		p {
+			margin-bottom: 10px;
+			padding: 10px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+		}
+
+		.no-messages {
+			font-style: italic;
+			color: #777;
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Spam Messages</h1>
+
+	{% if bodies %}
+		{% for sender, body in bodies %}
+			<p><strong>From:</strong> {{ sender }}</p>
+			<p>{{ body }}</p>
+			<hr>
+		{% endfor %}
+	{% else %}
+		<p class="no-messages">No spam messages found</p>
+	{% endif %}
+</body>
+</html>

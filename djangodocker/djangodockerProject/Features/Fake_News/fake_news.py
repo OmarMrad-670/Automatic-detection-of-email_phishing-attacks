@@ -1,0 +1,1 @@
+print("Detection Fake News ...........")

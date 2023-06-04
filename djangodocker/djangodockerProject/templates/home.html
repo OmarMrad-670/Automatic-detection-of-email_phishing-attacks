@@ -1,0 +1,314 @@
+
+
+
+{% extends 'index.html' %}
+
+
+{% block Body %}
+
+<style>
+  .circular-image {
+      border-radius: 50%;
+  }
+</style>
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex justify-cntent-center align-items-center">
+  <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">Welcome to Our Team : </h2>
+        <p class="animate__animated animate__fadeInUp">Omar M'rad</p>
+        <p class="animate__animated animate__fadeInUp">Mail : mradomar670@gmail.com</p>
+        <p class="animate__animated animate__fadeInUp">Phone Number : +216 25 831 535</p>
+        <img src="./static/home/assets/img/team/1.png" class="img-fluid circular-image" alt="" width="200" height="200">      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <p class="animate__animated animate__fadeInUp">Eya Bouzaiene</p>
+        <p class="animate__animated animate__fadeInUp">Mail : eya.bouzaiene@esprit.tn</p>
+        <p class="animate__animated animate__fadeInUp">Phone Number : +216 27 708 111</p>      
+        <img src="./static/home/assets/img/team/2.png" class="img-fluid circular-image" alt="" width="200" height="200">      </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">Mayssa Bouzid</h2>
+        <p class="animate__animated animate__fadeInUp">Mail : Mayssa.Bouzid@esprit.tn</p>
+        <p class="animate__animated animate__fadeInUp">Phone Number : +216 52 786 564</p>      
+        <img src="./static/home/assets/img/team/3.jpg" class="img-fluid circular-image" alt="" width="200" height="200">      </div>      
+    </div>
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+    </a>
+
+  </div>
+</section><!-- End Hero -->
+
+
+<main id="main">
+
+     <!-- ======= Icon Boxes Section ======= -->
+     <section id="icon-boxes" class="icon-boxes">
+       <div class="container">
+ 
+         <div class="row">
+           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+             <div class="icon-box">
+               <div class="icon"><i class="bx bxl-dribbble"></i></div>
+               <h4 class="title"><a href="">Cyberbullying</a></h4>
+               <p class="description">It often involves sending offensive or threatening messages, spreading rumors, sharing private information without consent, or engaging in online harassment.</p>
+             </div>
+           </div>
+ 
+           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+             <div class="icon-box">
+               <div class="icon"><i class="bx bx-file"></i></div>
+               <h4 class="title"><a href="">Sentiment Analysis</a></h4>
+               <p class="description">Applying sentiment analysis to phishing email detection can help identify suspicious emails that use emotional manipulation to deceive recipients.
+                Phishing attackers often exploit cognitive biases to manipulate recipients into clicking on malicious links or disclosing sensitive information.</p>
+             </div>
+           </div>
+ 
+           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+             <div class="icon-box">
+               <div class="icon"><i class="bx bx-tachometer"></i></div>
+               <h4 class="title"><a href="">Logo Detection</a></h4>
+               <p class="description">Logo detection algorithms can also compare logos in suspicious emails with known legitimate logos to identify similarities or differences. This technique helps detect instances where attackers have altered a logo slightly to deceive recipients.</p>
+             </div>
+           </div>
+ 
+           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+             <div class="icon-box">
+               <div class="icon"><i class="bx bx-layer"></i></div>
+               <h4 class="title"><a href="">Attachment</a></h4>
+               <p class="description">Phishing emails may contain attachments or embedded links that lead to virus-infected files.
+                Malicious photo detection aims to identify images that contain harmful code or trigger exploits when opened or displayed.
+               </p>
+             </div>
+           </div>
+ 
+         </div>
+ 
+       </div>
+     </section><!-- End Icon Boxes Section -->
+     
+      <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Protection  is Our Business.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Our Business Objectives :
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Protect sensitive information </li>
+              <li><i class="ri-check-double-line"></i> Prevent financialloss </li>
+              <li><i class="ri-check-double-line"></i> Maintain brand reputation</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Phishing email detection refers to the process of identifying and recognizing fraudulent emails that are designed to deceive recipients and steal their personal information. By carefully examining various elements of an email, such as the sender's address, the email content, and any embedded links or attachments, individuals can spot indicators of phishing attempts. These may include suspicious email addresses, generic greetings, spelling or grammatical errors, urgent or threatening language, requests for personal information or financial details, and mismatched URLs. Detecting phishing emails is crucial for maintaining online security and protecting oneself from potential cyber threats.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+ 
+     <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/esprit.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/docker.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/github.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./static/home/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+    
+     
+ 
+     <!-- ======= Mails Section ======= -->
+     <section id="team" class="team section-bg">
+       <div class="container" data-aos="fade-up">
+ 
+         <div class="section-title">
+           <h2>Mails</h2>
+         </div>
+ 
+         <div class="row">
+ 
+           {% for sender,subject, body , score_email,Classification_spam,Classification_Fake,Classification_Cyberbullying,type_Cyberbullying,score_sentiment,emotion,Classification_Sarcasm,Classification_Logo,Classification_Attachment,Classification_Virus,Description_logo,Description_attach,Classification_URL in bodies %}
+           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+             <div class="member d-flex align-items-start">
+           {% if score_email > 0.5 %}
+               {% with name_image="croix.png" %}
+               <div class="pic"><img src="./static/home/assets/img/{{name_image}}" class="img-fluid" alt=""></div>
+               {% endwith %}
+           {% else %}
+               {% with name_image="check.png" %}
+               <div class="pic"><img src="./static/home/assets/img/{{name_image}}" class="img-fluid" alt=""></div>
+               {% endwith %}
+           {% endif %}
+
+               <div class="member-info">
+                 <h4>{{ sender }}</h4>
+
+                 {% if subject %}
+                 <span>Subject : {{ subject }}</span>
+                 
+                 {% else %}
+                 <span>There's no Subject</span>
+                 {% endif %}
+
+                 <p>Message : {{ body }}</p>
+                 <h7> Score :{{ score_email }}</h7>
+
+                 <div class="social">
+                  <a href="Page_Plus.html?score_email={{ score_email }}&Classification_spam={{ Classification_spam }}&Classification_Fake={{ Classification_Fake }}&Classification_Cyberbullying={{ Classification_Cyberbullying }}&type_Cyberbullying={{ type_Cyberbullying }}&score_sentiment={{ score_sentiment }}&emotion={{ emotion }}&Classification_Sarcasm={{ Classification_Sarcasm }}&Classification_Logo={{ Classification_Logo }}&Classification_Attachment={{ Classification_Attachment }}&Classification_Virus={{ Classification_Virus }}&Description_logo={{ Description_logo }}&Description_attach={{ Description_attach }}&Classification_URL={{ Classification_URL }}"><i class="ri-bookmark-line"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                   <a href=""><i class="ri-instagram-fill"></i></a>
+                   <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           {% endfor %}
+ 
+         </div>
+       </div>
+     </section><!-- End Mails Section -->
+
+     <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>DT</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Spam Detection</li>
+                <li class="na">Fake News Detection</li>
+                <li class="na">Cyberbullying Detection</li>
+                <li class="na">Logo Detection</li>
+                <li class="na">URL Detection</li>
+                <li class="na">Sarcasm Detection</li>
+                <li class="na">Sentiment Analysis</li>
+                <li class="na">Attachment Detection</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>DT</sup>40<span> / month</span></h4>
+              <ul>
+                <ul>
+                  <li>Spam Detection</li>
+                  <li>Fake News Detection</li>
+                  <li>URL Detection</li>
+                  <li>Attachment Detection</li>
+                  <li class="na">Cyberbullying Detection</li>
+                  <li class="na">Logo Detection</li>
+                  <li class="na">Sarcasm Detection</li>
+                  <li class="na">Sentiment Analysis</li>
+                </ul>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>DT</sup>75<span> / month</span></h4>
+              <ul>
+                <li>Spam Detection</li>
+                <li>Fake News Detection</li>
+                <li>URL Detection</li>
+                <li>Attachment Detection</li>
+                <li>Cyberbullying Detection</li>
+                <li>Sarcasm Detection</li>
+                <li class="na">Logo Detection</li>
+                <li class="na">Sentiment Analysis</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>DT</sup>150<span> / month</span></h4>
+              <ul>
+                <li>Spam Detection</li>
+                <li>Fake News Detection</li>
+                <li>URL Detection</li>
+                <li>Attachment Detection</li>
+                <li>Cyberbullying Detection</li>
+                <li>Sarcasm Detection</li>
+                <li>Logo Detection</li>
+                <li>Sentiment Analysis</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+ 
+    
+ </main><!-- End #main -->
+
+{% endblock %}

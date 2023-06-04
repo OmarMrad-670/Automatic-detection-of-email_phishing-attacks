@@ -1,0 +1,39 @@
+version: "2.15.1"
+services:
+ email-parser:
+  build: ./Features/Email_Parser
+  ports:
+  - "5000:5000"
+ fake-news:
+  build: ./Features/Fake_News
+  ports:
+  - "5001:5001"
+ cyberl:
+  build: ./Features/Cyberbullying
+  ports:
+  - "5002:5002"
+ url:
+  build: ./Features/URL
+  ports:
+  - "5003:5003"
+ sarcasm:
+  build: ./Features/Sarcasm
+  ports:
+  - "5004:5004"
+ logo_detection:
+  build: ./Features/Logo_Detection
+  ports:
+  - "5005:5005" 
+ attachment:
+  build: ./Features/Attachment
+  ports:
+  - "5006:5006"   
+ app:
+  build: .
+  volumes:
+   - .:/code
+  ports:
+   - 8000:8000
+  image: app:django
+  container_name: my_first_django_container
+  command: python manage.py runserver 0.0.0.0:8000
